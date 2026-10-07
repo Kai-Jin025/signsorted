@@ -563,6 +563,32 @@
 
   /* ---------------- init ---------------- */
 
+  // Deep links from the fonts gallery: ?font=Great+Vibes&text=Alex+Morgan
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var wantText = params.get('text');
+    var wantFont = params.get('font');
+    if (wantText) {
+      typeName.value = wantText;
+      typeState.text = wantText;
+    }
+    if (wantFont) {
+      var match = null;
+      for (var fi = 0; fi < fontChips.length; fi++) {
+        if (fontChips[fi].dataset.font === wantFont) { match = fontChips[fi]; break; }
+      }
+      if (match) {
+        fontChips.forEach(function (c) {
+          var on = c === match;
+          c.classList.toggle('is-active', on);
+          c.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+        typeState.font = wantFont;
+        setMode('type');
+      }
+    }
+  } catch (err) {}
+
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(function () {
       if (mode === 'type') render();

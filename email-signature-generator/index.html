@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Email Signature Generator — HTML Signature for Gmail &amp; Outlook | SignSorted</title>
+<meta name="description" content="Create a professional email signature in minutes: enter your details, pick a template, preview it live, and copy the HTML straight into Gmail, Outlook or Apple Mail. Free, no signup, nothing stored.">
+<link rel="canonical" href="https://signsorted.com/email-signature-generator/">
+<meta name="theme-color" content="#1d4ed8">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SignSorted">
+<meta property="og:title" content="Free Email Signature Generator — HTML Signature for Gmail &amp; Outlook">
+<meta property="og:description" content="Enter your details, pick a template, copy the HTML into Gmail, Outlook or Apple Mail. Free, no signup.">
+<meta property="og:url" content="https://signsorted.com/email-signature-generator/">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebApplication","name":"Email Signature Generator","url":"https://signsorted.com/email-signature-generator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free email signature generator: enter your details, choose a template, and copy professional HTML signature code into Gmail, Outlook or Apple Mail.","publisher":{"@type":"Organization","name":"SignSorted","url":"https://signsorted.com/"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is this email signature generator free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free. No account, no signup, no watermark and no trial that runs out. Build and copy as many signatures as you like."}},
+{"@type":"Question","name":"Will my signature work in Gmail?","acceptedAnswer":{"@type":"Answer","text":"Yes. Copy the signature, open Gmail settings, go to the Signature section and paste it in with Ctrl+V. Gmail keeps the layout, links, colors and images. Our step-by-step Gmail guide walks through every screen."}},
+{"@type":"Question","name":"Does it work in Outlook and Apple Mail?","acceptedAnswer":{"@type":"Answer","text":"Yes. The templates are built with email-safe table HTML and a plain Arial font stack, which is exactly what Outlook, Apple Mail and Gmail render reliably. Fancy web fonts and CSS grids are avoided on purpose."}},
+{"@type":"Question","name":"Why is my photo or logo not showing?","acceptedAnswer":{"@type":"Answer","text":"Images must be hosted at a public web address to display in email. Paste a link to a photo you have uploaded somewhere public, and it will load in the preview and in recipients inboxes. Some recipients will still need to click Display images the first time."}},
+{"@type":"Question","name":"Can I include my handwritten signature?","acceptedAnswer":{"@type":"Answer","text":"Yes. Create a free transparent PNG with the SignSorted signature generator, host it anywhere public, and paste its URL into the handwritten signature image field. It appears under your contact details in every template."}},
+{"@type":"Question","name":"Do you store my details?","acceptedAnswer":{"@type":"Answer","text":"No. The signature is assembled, previewed and copied entirely inside your browser. Your name, phone number and email address are never sent to us."}},
+{"@type":"Question","name":"Can I add the signature to Gmail on my phone?","acceptedAnswer":{"@type":"Answer","text":"The Gmail mobile app has its own text-only signature setting. Turn off Mobile Signature in the app settings (Settings, then your account), and the app falls back to the signature you set on the web, images included."}}
+]}
+]}
+</script>
+</head>
+<body>
+
+<header class="site-head">
+<div class="inner">
+<a class="brand" href="../">Sign<em>Sorted</em></a>
+<nav>
+<a href="../">Home</a>
+<a href="../signature-generator/">Signature Generator</a>
+<a href="../email-signature-generator/" aria-current="page">Email Signature</a>
+<a href="../signature-fonts/">Fonts</a>
+<a href="../about/">About</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<p class="kicker">Free online tool · no signup</p>
+<h1>Email Signature Generator</h1>
+<p class="lead">Enter your details, pick a template, and copy a professional HTML signature straight into Gmail, Outlook or Apple Mail — in about a minute.</p>
+
+<section class="tool" aria-label="Email signature generator tool">
+  <div class="tool-tabs">
+    <button type="button" class="tab is-active" data-tpl="classic">Classic</button>
+    <button type="button" class="tab" data-tpl="photo">Photo</button>
+    <button type="button" class="tab" data-tpl="logo">Logo</button>
+    <button type="button" class="tab" data-tpl="social">Social</button>
+  </div>
+  <div class="controls">
+    <div class="form-grid">
+      <div class="field"><label for="fName">Full name</label><input type="text" id="fName" data-key="name" value="Alex Morgan" autocomplete="name"></div>
+      <div class="field"><label for="fTitle">Job title</label><input type="text" id="fTitle" data-key="title" value="Product Manager"></div>
+      <div class="field"><label for="fCompany">Company</label><input type="text" id="fCompany" data-key="company" value="Acme Inc."></div>
+      <div class="field"><label for="fAccent">Accent color</label><input type="color" id="fAccent" data-key="accent" value="#1d4ed8"></div>
+      <div class="field"><label for="fEmail">Email</label><input type="text" id="fEmail" data-key="email" value="alex@acme.com"></div>
+      <div class="field"><label for="fPhone">Phone</label><input type="text" id="fPhone" data-key="phone" value="+1 555 010 3344"></div>
+      <div class="field"><label for="fWebsite">Website</label><input type="text" id="fWebsite" data-key="website" value="www.acme.com"></div>
+      <div class="field"><label for="fAddress">Address</label><input type="text" id="fAddress" data-key="address" value="100 Market St, San Francisco, CA"></div>
+      <div class="field field-full"><label for="fPhoto">Profile photo URL (for the Photo template)</label><input type="text" id="fPhoto" data-key="photo" placeholder="https://..."></div>
+      <div class="field field-full"><label for="fLogo">Logo image URL (for the Logo template)</label><input type="text" id="fLogo" data-key="logo" placeholder="https://..."></div>
+      <div class="field field-full"><label for="fHand">Handwritten signature image URL (optional, all templates)</label><input type="text" id="fHand" data-key="hand" placeholder="Make one free with our signature generator, then paste its link here"></div>
+      <div class="field field-full"><span class="field-hint">Images need a public web address to display in email — paste a link to a photo or logo hosted anywhere public (your website, an image host). Inline uploads get stripped by Gmail, so a hosted URL is the reliable way.</span></div>
+      <div class="field"><label for="fLinkedin">LinkedIn</label><input type="text" id="fLinkedin" data-key="linkedin" value="linkedin.com/in/alexmorgan"></div>
+      <div class="field"><label for="fTwitter">X / Twitter</label><input type="text" id="fTwitter" data-key="twitter" value="x.com/alexmorgan"></div>
+      <div class="field"><label for="fInstagram">Instagram</label><input type="text" id="fInstagram" data-key="instagram" placeholder="instagram.com/..."></div>
+      <div class="field"><label for="fFacebook">Facebook</label><input type="text" id="fFacebook" data-key="facebook" placeholder="facebook.com/..."></div>
+    </div>
+
+    <div class="sig-preview">
+      <iframe id="sigFrame" title="Live email signature preview"></iframe>
+    </div>
+
+    <div class="tool-actions">
+      <button type="button" class="btn" id="clearBtn">Clear</button>
+      <button type="button" class="btn" id="downloadBtn">Download .html</button>
+      <button type="button" class="btn btn-primary" id="copyBtn">Copy signature</button>
+    </div>
+  </div>
+</section>
+
+<p class="hero-note">🔒 Nothing you type here leaves your browser — the signature is assembled and copied locally, so your phone number and email are never sent to us.</p>
+
+<section class="prose">
+<h2>How to install your signature</h2>
+<ul>
+<li><b>Gmail</b> — Copy the signature, then open Gmail settings → See all settings → General → scroll to Signature → Create new → paste with Ctrl+V (Cmd+V on Mac) → Save Changes. Illustrated walkthrough: <a href="../gmail-signature/">how to add a signature in Gmail</a>.</li>
+<li><b>Outlook on the web</b> — Settings (gear icon) → Mail → Compose and reply → Email signature → paste → Save.</li>
+<li><b>Outlook desktop (Windows)</b> — File → Options → Mail → Signatures → New → paste. Or open the downloaded <i>.html</i> file in your browser, select all (Ctrl+A), copy, and paste into the signature editor.</li>
+<li><b>Apple Mail</b> — Mail → Settings → Signatures → + → paste. Uncheck "Always match my default message font" so the formatting stays intact.</li>
+</ul>
+<p>After installing, send yourself a quick test email — it takes ten seconds and catches every surprise.</p>
+</section>
+
+<section class="prose">
+<h2>What makes a good email signature</h2>
+<ul>
+<li><b>Four or five lines, maximum.</b> Name, title, one or two ways to reach you, maybe a link. Anything longer becomes wallpaper.</li>
+<li><b>Plain fonts win.</b> Email clients substitute fonts unpredictably — these templates use Arial/Helvetica on purpose, because that choice renders the same everywhere.</li>
+<li><b>Keep images small.</b> A photo around 84px and a logo around 48px tall look crisp without drowning the message.</li>
+<li><b>Check your local rules.</b> If you send business email from some countries (Germany, for example), company registration details in the footer aren't optional — they're the law.</li>
+<li><b>Link only what you use.</b> Three social profiles you actually post to beat six you don't.</li>
+</ul>
+</section>
+
+<section class="faq" id="faq">
+<h2>Frequently asked questions</h2>
+<details><summary>Is this email signature generator free?</summary>
+<p>Yes, completely free. No account, no signup, no watermark and no trial that runs out. Build and copy as many signatures as you like.</p></details>
+<details><summary>Will my signature work in Gmail?</summary>
+<p>Yes. Copy the signature, open Gmail settings, go to the Signature section and paste it in with Ctrl+V. Gmail keeps the layout, links, colors and images. Our <a href="../gmail-signature/">step-by-step Gmail guide</a> walks through every screen.</p></details>
+<details><summary>Does it work in Outlook and Apple Mail?</summary>
+<p>Yes. The templates are built with email-safe table HTML and a plain Arial font stack, which is exactly what Outlook, Apple Mail and Gmail render reliably. Fancy web fonts and CSS grids are avoided on purpose.</p></details>
+<details><summary>Why is my photo or logo not showing?</summary>
+<p>Images must be hosted at a public web address to display in email. Paste a link to a photo you've uploaded somewhere public, and it will load in the preview and in recipients' inboxes. Some recipients will still need to click "Display images" the first time.</p></details>
+<details><summary>Can I include my handwritten signature?</summary>
+<p>Yes. Create a free transparent PNG with our <a href="../signature-generator/">signature generator</a>, host it anywhere public, and paste its URL into the handwritten signature image field. It appears under your contact details in every template.</p></details>
+<details><summary>Do you store my details?</summary>
+<p>No. The signature is assembled, previewed and copied entirely inside your browser. Your name, phone number and email address are never sent to us.</p></details>
+<details><summary>Can I add the signature to Gmail on my phone?</summary>
+<p>The Gmail mobile app has its own text-only signature setting. Turn off "Mobile Signature" in the app settings (Settings → your account), and the app falls back to the signature you set on the web — images included.</p></details>
+</section>
+
+<div class="callout">
+<p><b>Related:</b> <a href="../signature-generator/">Signature Generator</a> (handwritten PNG in seconds) · <a href="../signature-fonts/">Signature Fonts</a> (14 script fonts) · <a href="../gmail-signature/">How to add a signature in Gmail</a></p>
+</div>
+
+</main>
+
+<footer class="site-foot">
+<div class="inner">
+<nav>
+<a href="../">Home</a>
+<a href="../signature-generator/">Signature Generator</a>
+<a href="../email-signature-generator/">Email Signature Generator</a>
+<a href="../signature-fonts/">Signature Fonts</a>
+<a href="../how-to-sign-a-pdf/">How to Sign a PDF</a>
+<a href="../gmail-signature/">Gmail Signature</a>
+<a href="../about/">About</a>
+<a href="../privacy/">Privacy</a>
+</nav>
+<p>SignSorted is a free, browser-based signature tool. Your signature never leaves your device. © 2026 SignSorted. Gmail and Google are trademarks of Google LLC; SignSorted is not affiliated with Google.</p>
+</div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  var $ = function (sel) { return document.querySelector(sel); };
+  var $$ = function (sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); };
+
+  var MUTED = '#6b7280';
+  var DARK = '#111827';
+  var BODY = '#374151';
+  var LINE = '#e5e7eb';
+  var SEP = '<span style="color:#c9ccd1;"> &nbsp;·&nbsp; </span>';
+
+  var frame = $('#sigFrame');
+  var inputs = $$('[data-key]');
+  var tplTabs = $$('.tab[data-tpl]');
+  var copyBtn = $('#copyBtn');
+  var downloadBtn = $('#downloadBtn');
+  var clearBtn = $('#clearBtn');
+  var toast = $('#toast');
+  var toastTimer = null;
+  var lastHTML = '';
+
+  var state = { tpl: 'classic' };
+
+  /* ---------------- helpers ---------------- */
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function href(u) {
+    u = String(u || '').trim();
+    if (!u) return '';
+    if (/^https?:\/\//i.test(u)) return u;
+    return 'https://' + u;
+  }
+
+  function stripProto(u) {
+    return href(u).replace(/^https?:\/\//i, '').replace(/\/$/, '');
+  }
+
+  function initials(name) {
+    var parts = String(name || '').trim().split(/\s+/);
+    var out = '';
+    for (var i = 0; i < parts.length && out.length < 2; i++) {
+      if (parts[i]) out += parts[i].charAt(0).toUpperCase();
+    }
+    return out || '?';
+  }
+
+  function collect() {
+    inputs.forEach(function (inp) { state[inp.dataset.key] = inp.value.trim(); });
+    if (!state.accent) state.accent = '#1d4ed8';
+  }
+
+  function anyContent(d) {
+    var keys = ['name', 'title', 'company', 'email', 'phone', 'website', 'address',
+                'linkedin', 'twitter', 'instagram', 'facebook', 'hand'];
+    for (var i = 0; i < keys.length; i++) {
+      if (d[keys[i]]) return true;
+    }
+    return false;
+  }
+
+  /* ---------------- signature HTML builder ---------------- */
+
+  var SOCIALS = [
+    ['linkedin', 'LinkedIn'],
+    ['twitter', 'X'],
+    ['instagram', 'Instagram'],
+    ['facebook', 'Facebook']
+  ];
+
+  function contactHTML(d) {
+    var items = [];
+    if (d.email) items.push('<a href="mailto:' + esc(d.email) + '" style="color:' + d.accent + ';text-decoration:none;">' + esc(d.email) + '</a>');
+    if (d.phone) items.push('<span style="white-space:nowrap;">' + esc(d.phone) + '</span>');
+    if (d.website) items.push('<a href="' + esc(href(d.website)) + '" style="color:' + d.accent + ';text-decoration:none;">' + esc(stripProto(d.website)) + '</a>');
+    if (d.address) items.push(esc(d.address));
+    return items.join(SEP);
+  }
+
+  function socialPlain(d) {
+    var out = [];
+    SOCIALS.forEach(function (s) {
+      if (d[s[0]]) {
+        out.push('<a href="' + esc(href(d[s[0]])) + '" style="color:' + d.accent + ';text-decoration:none;">' + s[1] + '</a>');
+      }
+    });
+    return out.join(SEP);
+  }
+
+  function socialChips(d) {
+    var out = [];
+    SOCIALS.forEach(function (s) {
+      if (d[s[0]]) {
+        out.push('<a href="' + esc(href(d[s[0]])) + '" style="display:inline-block;padding:3px 12px;border:1px solid #d1d5db;border-radius:999px;color:' + d.accent + ';text-decoration:none;font-size:12px;margin:0 6px 6px 0;">' + s[1] + '</a>');
+      }
+    });
+    return out.join('');
+  }
+
+  function buildHTML(d) {
+    if (!anyContent(d)) {
+      return '<div style="padding:28px;text-align:center;color:#9ca3af;font-family:Arial,Helvetica,sans-serif;font-size:14px;">Start typing your details to build your signature</div>';
+    }
+
+    var name = esc(d.name);
+    var titleCo = [];
+    if (d.title) titleCo.push(esc(d.title));
+    if (d.company) titleCo.push(esc(d.company));
+    var titleLine = titleCo.join(' · ');
+    var contact = contactHTML(d);
+
+    function nameRow(fs) {
+      return '<tr><td style="padding:0;"><span style="font-size:' + fs + 'px;font-weight:700;color:' + DARK + ';">' + name + '</span></td></tr>';
+    }
+    function titleRow() {
+      return titleLine ? '<tr><td style="padding:2px 0 0;color:' + MUTED + ';">' + titleLine + '</td></tr>' : '';
+    }
+    function dividerRow() {
+      return '<tr><td style="padding:10px 0 0;"><div style="width:48px;border-top:3px solid ' + d.accent + ';font-size:0;line-height:0;">&nbsp;</div></td></tr>';
+    }
+    function contactRow() {
+      return contact ? '<tr><td style="padding:8px 0 0;">' + contact + '</td></tr>' : '';
+    }
+    function handRow() {
+      return d.hand
+        ? '<tr><td style="padding:10px 0 0;"><img src="' + esc(href(d.hand)) + '" alt="Signature" height="44" style="display:block;height:44px;width:auto;border:0;" /></td></tr>'
+        : '';
+    }
+    function socialRow() {
+      var s = socialPlain(d);
+      return s ? '<tr><td style="padding:8px 0 0;">' + s + '</td></tr>' : '';
+    }
+    function innerTable(rows) {
+      return '<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.55;color:' + BODY + ';border-collapse:collapse;">' + rows + '</table>';
+    }
+
+    if (d.tpl === 'photo') {
+      var avatar;
+      if (d.photo) {
+        avatar = '<img src="' + esc(href(d.photo)) + '" alt="' + name + '" width="84" height="84" style="display:block;width:84px;height:84px;border-radius:50%;object-fit:cover;border:0;" />';
+      } else {
+        avatar = '<div style="width:84px;height:84px;border-radius:50%;background:' + d.accent + ';color:#ffffff;font-size:30px;font-weight:700;text-align:center;line-height:84px;">' + esc(initials(d.name)) + '</div>';
+      }
+      return '<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;"><tr>' +
+        '<td style="padding:0 16px 0 0;vertical-align:top;">' + avatar + '</td>' +
+        '<td style="vertical-align:top;padding:0;">' +
+          innerTable(nameRow(17) + titleRow() + contactRow() + handRow() + socialRow()) +
+        '</td></tr></table>';
+    }
+
+    if (d.tpl === 'logo') {
+      var mark;
+      if (d.logo) {
+        mark = '<img src="' + esc(href(d.logo)) + '" alt="' + esc(d.company || 'Logo') + '" height="48" style="display:block;height:48px;width:auto;border:0;" />';
+      } else {
+        mark = '<div style="width:48px;height:48px;border-radius:10px;background:' + d.accent + ';color:#ffffff;font-size:18px;font-weight:700;text-align:center;line-height:48px;font-family:Arial,Helvetica,sans-serif;">' + esc(initials(d.name)) + '</div>';
+      }
+      return '<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;"><tr>' +
+        '<td style="padding:0 16px 0 0;vertical-align:top;">' + mark + '</td>' +
+        '<td style="vertical-align:top;border-left:1px solid ' + LINE + ';padding:0 0 0 16px;">' +
+          innerTable(nameRow(17) + titleRow() + contactRow() + handRow() + socialRow()) +
+        '</td></tr></table>';
+    }
+
+    if (d.tpl === 'social') {
+      var chips = socialChips(d);
+      return innerTable(
+        nameRow(17) + titleRow() + contactRow() + handRow() +
+        (chips ? '<tr><td style="padding:10px 0 0;">' + chips + '</td></tr>' : '')
+      );
+    }
+
+    // classic (default)
+    return innerTable(nameRow(18) + titleRow() + dividerRow() + contactRow() + handRow() + socialRow());
+  }
+
+  function plainText(d) {
+    var lines = [];
+    if (d.name) lines.push(d.name);
+    var t = [d.title, d.company].filter(Boolean).join(' · ');
+    if (t) lines.push(t);
+    var c = [];
+    if (d.email) c.push(d.email);
+    if (d.phone) c.push(d.phone);
+    if (d.website) c.push(stripProto(d.website));
+    if (d.address) c.push(d.address);
+    if (c.length) lines.push(c.join(' | '));
+    SOCIALS.forEach(function (s) { if (d[s[0]]) lines.push(s[1] + ': ' + href(d[s[0]])); });
+    return lines.join('\n');
+  }
+
+  /* ---------------- preview ---------------- */
+
+  function renderPreview() {
+    collect();
+    lastHTML = buildHTML(state);
+    frame.srcdoc = '<!DOCTYPE html><html><head><meta charset="utf-8"></head>' +
+      '<body style="margin:0;padding:20px;background:#ffffff;">' + lastHTML + '</body></html>';
+  }
+
+  inputs.forEach(function (inp) {
+    inp.addEventListener('input', renderPreview);
+  });
+
+  tplTabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      state.tpl = tab.dataset.tpl;
+      tplTabs.forEach(function (t) { t.classList.toggle('is-active', t === tab); });
+      renderPreview();
+    });
+  });
+
+  /* ---------------- copy / download / clear ---------------- */
+
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove('show'); }, 2600);
+  }
+
+  function fallbackCopy(html) {
+    var div = document.createElement('div');
+    div.contentEditable = 'true';
+    div.style.position = 'fixed';
+    div.style.left = '-9999px';
+    div.style.top = '0';
+    div.innerHTML = html;
+    document.body.appendChild(div);
+    var range = document.createRange();
+    range.selectNodeContents(div);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+    sel.removeAllRanges();
+    div.remove();
+    showToast(ok ? 'Signature copied — paste it into your email settings' : 'Copy failed — select the preview manually and copy');
+  }
+
+  function doCopy() {
+    if (!lastHTML) return;
+    if (navigator.clipboard && window.ClipboardItem) {
+      try {
+        var item = new ClipboardItem({
+          'text/html': new Blob([lastHTML], { type: 'text/html' }),
+          'text/plain': new Blob([plainText(state)], { type: 'text/plain' })
+        });
+        navigator.clipboard.write([item]).then(
+          function () { showToast('Signature copied — paste it into your email settings'); },
+          function () { fallbackCopy(lastHTML); }
+        );
+        return;
+      } catch (err) { /* fall through */ }
+    }
+    fallbackCopy(lastHTML);
+  }
+  copyBtn.addEventListener('click', doCopy);
+
+  downloadBtn.addEventListener('click', function () {
+    var doc = '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<title>Email signature</title>\n</head>\n' +
+      '<body style="margin:24px;">\n' + lastHTML + '\n</body>\n</html>\n';
+    var blob = new Blob([doc], { type: 'text/html' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'email-signature.html';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+    showToast('Downloaded email-signature.html');
+  });
+
+  clearBtn.addEventListener('click', function () {
+    inputs.forEach(function (inp) {
+      if (inp.type !== 'color') inp.value = '';
+    });
+    renderPreview();
+    showToast('Cleared — start with your name');
+  });
+
+  /* ---------------- init ---------------- */
+
+  renderPreview();
+})();
+</script>
+
+</body>
+</html>
