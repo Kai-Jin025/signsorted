@@ -1,0 +1,10 @@
+README.md
+开工方案.md
+部署操作手册.md
+tools/
+__pycache__/
+.vscode/
+node_modules/
+相关文档/
+*.pyc
+更新并上传.bat
