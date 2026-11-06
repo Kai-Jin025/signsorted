@@ -740,3 +740,7 @@ input[type="range"] {
 .partners { margin-top: 14px; }
 .partners a { display: inline-block; }
 .partners img { display: block; width: 182px; height: 46px; }
+/* AI Tool Center 文本回链（2026-11-06，免费档 dofollow 的交换条件） */
+.partners .txt { display: inline-block; margin-top: 10px; font-size: 13px;
+  color: var(--fg-muted); text-decoration: none; }
+.partners .txt:hover { color: var(--fg); text-decoration: underline; }
