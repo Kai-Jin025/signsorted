@@ -736,3 +736,7 @@ input[type="range"] {
   .font-grid { grid-template-columns: 1fr; }
   .cta-card { flex-direction: column; align-items: flex-start; }
 }
+/* TheSaaSDir 徽章（2026-11-06，免费档 dofollow 的交换条件） */
+.partners { margin-top: 14px; }
+.partners a { display: inline-block; }
+.partners img { display: block; width: 182px; height: 46px; }
