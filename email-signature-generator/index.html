@@ -12,6 +12,11 @@
 <meta property="og:title" content="Free Email Signature Generator — HTML Signature for Gmail &amp; Outlook">
 <meta property="og:description" content="Enter your details, pick a template, copy the HTML into Gmail, Outlook or Apple Mail. Free, no signup.">
 <meta property="og:url" content="https://signsorted.com/email-signature-generator/">
+<meta property="og:image" content="https://signsorted.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SignSorted — type it or draw it, get a clean transparent PNG.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../styles.css">
 <script type="application/ld+json">
@@ -362,6 +367,16 @@
     frame.srcdoc = '<!DOCTYPE html><html><head><meta charset="utf-8"></head>' +
       '<body style="margin:0;padding:20px;background:#ffffff;">' + lastHTML + '</body></html>';
   }
+
+  // 预览框跟着签名高度走，不留大片空白
+  frame.addEventListener('load', function () {
+    try {
+      var d = frame.contentDocument;
+      // 用 body 的盒子高度：documentElement.scrollHeight 不会小于 iframe 视口
+      var h = Math.ceil(d.body.getBoundingClientRect().height || d.body.scrollHeight || 200);
+      frame.style.height = Math.max(120, Math.min(460, h + 2)) + 'px';
+    } catch (e) { /* 跨域或未就绪时保持 CSS 默认高度 */ }
+  });
 
   inputs.forEach(function (inp) {
     inp.addEventListener('input', renderPreview);

@@ -491,7 +491,7 @@ input[type="range"] {
 
 .font-chips {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
   gap: 8px;
   width: 100%;
 }
@@ -507,6 +507,7 @@ input[type="range"] {
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   transition: border-color 0.12s ease, background 0.12s ease;
 }
 .font-chip:hover { border-color: var(--accent); }
