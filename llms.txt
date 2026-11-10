@@ -1,0 +1,21 @@
+# SignSorted
+
+> Free browser tools for signatures: draw or type a signature, download a transparent PNG, and build a full email signature. No signup, and nothing is uploaded — every tool runs locally in the browser.
+
+## Tools
+
+- [Signature Generator](https://signsorted.com/signature-generator/): Draw a signature with a mouse, finger or stylus, or type a name in one of 14 script fonts, then download a transparent PNG.
+- [Email Signature Generator](https://signsorted.com/email-signature-generator/): Enter your details, pick a template, preview it live, and copy the HTML straight into Gmail, Outlook or Apple Mail.
+- [Signature Fonts](https://signsorted.com/signature-fonts/): A gallery of the 14 script and handwriting fonts, previewable with your own name.
+
+## Guides
+
+- [How to Add a Signature in Gmail](https://signsorted.com/gmail-signature/): The signature lives in Settings → General, at the very bottom of the page. Create it there, point it at new mail *and* replies, then press Save Changes at the foot of the page — Gmail never saves that screen on its own.
+- [How to Sign a PDF](https://signsorted.com/how-to-sign-a-pdf/): No printer or scanner needed. Make a transparent PNG of the signature once, then place it with Adobe Acrobat Reader (Fill & Sign), Mac Preview, or Microsoft Edge.
+
+## Optional
+
+- [About](https://signsorted.com/about/)
+- [Contact](https://signsorted.com/contact/)
+- [Privacy Policy](https://signsorted.com/privacy/)
+- [Terms](https://signsorted.com/terms/)
